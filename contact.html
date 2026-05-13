@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TechVision – Contact Us</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- NAVBAR -->
+
+<nav>
+  <div class="nav-container">
+    <a href="index.html" class="nav-logo">Tech<span>Vision</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- PAGE HERO -->
+
+<div class="page-hero">
+  <h1>Get in <span>Touch</span></h1>
+  <p>We'd love to hear about your project. Our team typically responds within 24 hours.</p>
+  <div class="breadcrumb">
+    <a href="index.html">Home</a>
+    <span>›</span>
+    <span>Contact</span>
+  </div>
+</div>
+
+<!-- CONTACT SECTION -->
+
+<section>
+  <div class="section-inner">
+    <div class="contact-wrapper">
+
+```
+  <!-- INFO -->
+  <div class="contact-info">
+    <div class="section-title">Let's <span>Talk</span></div>
+    <div class="divider"></div>
+    <p style="color:var(--muted); margin-bottom:1rem;">Whether you have a question about our services, need a custom quote, or want to discuss how MIS principles can improve your business — we're here to help.</p>
+    <div class="contact-items">
+      <div class="contact-item">
+        <div class="contact-icon">📍</div>
+        <div>
+          <strong>Address</strong>
+          <p>King Fahd Road, Olaya District<br>Riyadh 12214, Saudi Arabia</p>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-icon">📞</div>
+        <div>
+          <strong>Phone</strong>
+          <p>+966 11 234 5678</p>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-icon">✉️</div>
+        <div>
+          <strong>Email</strong>
+          <p>info@techvision.sa</p>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-icon">⏰</div>
+        <div>
+          <strong>Business Hours</strong>
+          <p>Sunday – Thursday: 8:00 AM – 5:00 PM</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- FAQ -->
+    <div style="margin-top:2.5rem;">
+      <div class="section-title" style="font-size:1.2rem;">Quick <span>FAQ</span></div>
+      <div class="divider"></div>
+      <div class="card" style="margin-top:1rem; margin-bottom:0.8rem;">
+        <h3 style="font-size:0.95rem;">How long does a typical project take?</h3>
+        <p>Most projects range from 4 to 16 weeks depending on scope. We'll give you a clear timeline in our initial consultation.</p>
+      </div>
+      <div class="card">
+        <h3 style="font-size:0.95rem;">Do you offer ongoing support?</h3>
+        <p>Yes — all our packages include post-launch support. Enterprise clients get a dedicated account manager and SLA guarantee.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- FORM -->
+  <div>
+    <div class="contact-form">
+      <div class="section-title" style="font-size:1.4rem; margin-bottom:0.3rem;">Send Us a <span>Message</span></div>
+      <div class="divider" style="margin-bottom:1.8rem;"></div>
+
+      <form id="contactForm" novalidate>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="firstName">First Name *</label>
+            <input type="text" id="firstName" name="firstName" placeholder="Ahmad" />
+            <span class="error-msg" id="firstNameError">Please enter your first name.</span>
+          </div>
+          <div class="form-group">
+            <label for="lastName">Last Name *</label>
+            <input type="text" id="lastName" name="lastName" placeholder="Al-Rashid" />
+            <span class="error-msg" id="lastNameError">Please enter your last name.</span>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address *</label>
+          <input type="email" id="email" name="email" placeholder="ahmad@company.com" />
+          <span class="error-msg" id="emailError">Please enter a valid email address.</span>
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" placeholder="+966 5X XXX XXXX" />
+          <span class="error-msg" id="phoneError">Please enter a valid phone number.</span>
+        </div>
+
+        <div class="form-group">
+          <label for="service">Service of Interest *</label>
+          <select id="service" name="service">
+            <option value="">-- Select a service --</option>
+            <option value="cloud">Cloud Solutions</option>
+            <option value="analytics">Data Analytics & BI</option>
+            <option value="cybersecurity">Cybersecurity</option>
+            <option value="ai">AI & Automation</option>
+            <option value="software">Custom Software Development</option>
+            <option value="mis">MIS Consulting</option>
+            <option value="other">Other</option>
+          </select>
+          <span class="error-msg" id="serviceError">Please select a service.</span>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message *</label>
+          <textarea id="message" name="message" placeholder="Describe your project or inquiry..."></textarea>
+          <span class="error-msg" id="messageError">Please enter a message (at least 20 characters).</span>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width:100%; font-size:1rem;">Send Message ✉️</button>
+      </form>
+
+      <div class="form-success" id="formSuccess">
+        ✅ Thank you! Your message has been sent. We'll be in touch within 24 hours.
+      </div>
+    </div>
+  </div>
+
+</div>
+```
+
+  </div>
+</section>
+
+<!-- MAP PLACEHOLDER -->
+
+<section style="padding: 0 2rem 4rem; background:var(--primary);">
+  <div class="section-inner">
+    <div style="background:var(--card-bg); border:1px solid rgba(100,255,218,0.1); border-radius:12px; padding: 3rem 2rem; text-align:center;">
+      <div style="font-size:3rem; margin-bottom:1rem;">🗺️</div>
+      <p style="color:var(--muted);">King Fahd Road, Olaya District, Riyadh — <a href="https://maps.google.com" target="_blank">Open in Google Maps</a></p>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo" style="font-size:1.4rem;">Tech<span>Vision</span></a>
+        <p>Delivering smart IT solutions that empower businesses to grow, innovate, and succeed in the digital era.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="services.html">Cloud Solutions</a></li>
+          <li><a href="services.html">Data Analytics</a></li>
+          <li><a href="services.html">Cybersecurity</a></li>
+          <li><a href="services.html">AI & Automation</a></li>
+          <li><a href="services.html">MIS Consulting</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 TechVision. All rights reserved.</p>
+      <p>MIS Web Project – HTML & CSS</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Mobile nav
+  const hamburger = document.getElementById('hamburger');
+  const navLinks  = document.getElementById('navLinks');
+  hamburger.addEventListener('click', () => navLinks.classList.toggle('open'));
+
+  // FORM VALIDATION
+  const form = document.getElementById('contactForm');
+
+  function showError(fieldId, errorId) {
+    document.getElementById(fieldId).classList.add('error');
+    document.getElementById(errorId).classList.add('visible');
+  }
+
+  function clearError(fieldId, errorId) {
+    document.getElementById(fieldId).classList.remove('error');
+    document.getElementById(errorId).classList.remove('visible');
+  }
+
+  function isValidEmail(email) {
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+  }
+
+  function isValidPhone(phone) {
+    return phone === '' || /^[\+\d\s\-\(\)]{7,15}$/.test(phone);
+  }
+
+  // Live validation
+  document.getElementById('firstName').addEventListener('input', function() {
+    this.value.trim() ? clearError('firstName','firstNameError') : showError('firstName','firstNameError');
+  });
+  document.getElementById('lastName').addEventListener('input', function() {
+    this.value.trim() ? clearError('lastName','lastNameError') : showError('lastName','lastNameError');
+  });
+  document.getElementById('email').addEventListener('input', function() {
+    isValidEmail(this.value) ? clearError('email','emailError') : showError('email','emailError');
+  });
+  document.getElementById('phone').addEventListener('input', function() {
+    isValidPhone(this.value) ? clearError('phone','phoneError') : showError('phone','phoneError');
+  });
+  document.getElementById('service').addEventListener('change', function() {
+    this.value ? clearError('service','serviceError') : showError('service','serviceError');
+  });
+  document.getElementById('message').addEventListener('input', function() {
+    this.value.trim().length >= 20 ? clearError('message','messageError') : showError('message','messageError');
+  });
+
+  // Submit
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    let valid = true;
+
+    const firstName = document.getElementById('firstName').value.trim();
+    const lastName  = document.getElementById('lastName').value.trim();
+    const email     = document.getElementById('email').value.trim();
+    const phone     = document.getElementById('phone').value.trim();
+    const service   = document.getElementById('service').value;
+    const message   = document.getElementById('message').value.trim();
+
+    if (!firstName)              { showError('firstName','firstNameError'); valid = false; }
+    else                          { clearError('firstName','firstNameError'); }
+
+    if (!lastName)               { showError('lastName','lastNameError'); valid = false; }
+    else                          { clearError('lastName','lastNameError'); }
+
+    if (!isValidEmail(email))    { showError('email','emailError'); valid = false; }
+    else                          { clearError('email','emailError'); }
+
+    if (!isValidPhone(phone))    { showError('phone','phoneError'); valid = false; }
+    else                          { clearError('phone','phoneError'); }
+
+    if (!service)                { showError('service','serviceError'); valid = false; }
+    else                          { clearError('service','serviceError'); }
+
+    if (message.length < 20)     { showError('message','messageError'); valid = false; }
+    else                          { clearError('message','messageError'); }
+
+    if (valid) {
+      form.style.display = 'none';
+      document.getElementById('formSuccess').classList.add('visible');
+    }
+  });
+</script>
+
+</body>
+</html>
